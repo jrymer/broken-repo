@@ -1,5 +1,5 @@
 const Kits = () => {
-  return <div className="bg-black">kits</div>;
+  return <div>kits</div>;
 };
 
 export default Kits;
