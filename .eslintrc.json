@@ -1,6 +1,21 @@
 {
-  "extends": ["next/core-web-vitals", "prettier"],
+  "extends": [
+    "next/core-web-vitals",
+    "prettier",
+    "plugin:storybook/recommended"
+  ],
   "rules": {
     "quotes": ["error", "single"]
+    // "react/jsx-sort-props": [
+    //   "enabled",
+    //   {
+    //     "callbacksLast": true,
+    //     "shorthandFirst": true,
+    //     "multiline": "ignore",
+    //     "noSortAlphabetically": false,
+    //     "reservedFirst": true,
+    //     "locale": "auto"
+    //   }
+    // ]
   }
 }
