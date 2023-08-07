@@ -13,17 +13,21 @@ const IconDisplays = [
   { display: 'User', value: 'fa-user-circle' },
 ];
 
-interface IconProps {
+interface IconPreviewsProps {
+  color?: string;
   size?: 'fa-xs' | 'fa-md' | 'fa-lg';
 }
 
-export const Icons: FC<IconProps> = ({ size = 'fa-md' }) => {
+export const IconPreviews: FC<IconPreviewsProps> = ({
+  color,
+  size = 'fa-md',
+}) => {
   return (
     <div className="flex">
       {IconDisplays.map((icon) => (
         <div className="mr-2 grid" key={icon.value}>
           {Array.from(Array(3)).map((_, index) => {
-            let iconClassName = `${IconTypes[index].value} ${icon.value} ${size}`;
+            let iconClassName = `${IconTypes[index].value} ${icon.value} ${size} ${color}`;
 
             return (
               <div

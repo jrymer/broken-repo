@@ -1,14 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Icons } from './Icons';
+import { IconPreviews } from './IconPreviews';
 
-const meta: Meta<typeof Icons> = {
-  title: 'Design System/Icons',
-  component: Icons,
+const meta: Meta<typeof IconPreviews> = {
+  title: 'Design System/IconPreviews',
+  component: IconPreviews,
   args: {
     size: 'fa-md',
+    color: 'text-slate-900',
   },
   argTypes: {
+    color: {
+      control: { type: 'text' },
+    },
     size: {
       options: {
         'Extra small': 'fa-xs',
@@ -21,7 +25,7 @@ const meta: Meta<typeof Icons> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Icons>;
+type Story = StoryObj<typeof IconPreviews>;
 
 export const Default: Story = {
   args: {},
