@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'public/fontawesome/css/fontawesome.css';
+@import 'public/fontawesome/css/solid.css';
+@import 'public/fontawesome/css/light.css';
+@import 'public/fontawesome/css/regular.css';

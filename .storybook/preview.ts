@@ -1,4 +1,8 @@
 import 'tailwindcss/tailwind.css';
+import '../public/fontawesome/css/fontawesome.css';
+import '../public/fontawesome/css/solid.css';
+import '../public/fontawesome/css/light.css';
+import '../public/fontawesome/css/regular.css';
 import type { Preview } from '@storybook/react';
 import { withThemeByDataAttribute } from '@storybook/addon-styling';
 
