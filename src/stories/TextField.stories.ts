@@ -5,6 +5,9 @@ import { TextField } from './TextField';
 const meta: Meta<typeof TextField> = {
   title: 'Design System/Base TextField',
   component: TextField,
+  argTypes: {
+    onChange: { action: 'changes' },
+  },
 };
 
 export default meta;
@@ -14,6 +17,7 @@ export const Default: Story = {
   args: {
     label: 'Label',
     name: 'Name',
-    placeholder: 'Placehodler',
+    placeholder: 'Placeholder',
+    // onChange: (value: string) => value,
   },
 };

@@ -8,3 +8,8 @@ export interface Datum {
   label: string;
   value: string;
 }
+
+export interface DatumId {
+  id: string;
+  value: string;
+}

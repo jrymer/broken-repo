@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Select } from './Select';
-import { Datum } from '../types';
+import { Datum } from '../types/Fr';
 
 const meta: Meta<typeof Select> = {
   title: 'Design System/Select',
@@ -12,7 +12,7 @@ const meta: Meta<typeof Select> = {
 export default meta;
 type Story = StoryObj<typeof Select>;
 
-const DefaultOptions: Datum[] = [
+const DEFAULT_OPTIONS: Datum[] = [
   { label: 'Apples', value: 'apples' },
   { label: 'Oranges', value: 'oranges' },
   { label: 'Bananas', value: 'bananas' },
@@ -21,7 +21,7 @@ const DefaultOptions: Datum[] = [
 export const Default: Story = {
   args: {
     label: 'Fruits',
-    options: DefaultOptions,
+    options: DEFAULT_OPTIONS,
     placeholder: 'Select one',
   },
 };
@@ -29,8 +29,8 @@ export const Default: Story = {
 export const Selected: Story = {
   args: {
     label: 'Fruits',
-    options: DefaultOptions,
+    options: DEFAULT_OPTIONS,
     placeholder: 'Select one',
-    selected: DefaultOptions[0],
+    selected: DEFAULT_OPTIONS[0],
   },
 };

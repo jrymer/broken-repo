@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BaseFormFieldProps, Datum } from '../types';
+import { BaseFormFieldProps, Datum } from '../types/Fr';
 
 interface SelectProps extends BaseFormFieldProps {
   options: Datum[];
