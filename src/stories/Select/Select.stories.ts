@@ -1,12 +1,10 @@
-// Button.stories.ts|tsx
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { Select } from './Select';
 import { Datum } from '../types';
 
 const meta: Meta<typeof Select> = {
-  title: 'Design System/Select/Base Select',
+  title: 'Design System/Select',
   component: Select,
   argTypes: { onSelected: { action: 'selected' } },
 };
@@ -25,5 +23,14 @@ export const Default: Story = {
     label: 'Fruits',
     options: DefaultOptions,
     placeholder: 'Select one',
+  },
+};
+
+export const Selected: Story = {
+  args: {
+    label: 'Fruits',
+    options: DefaultOptions,
+    placeholder: 'Select one',
+    selected: DefaultOptions[0],
   },
 };

@@ -1,11 +1,9 @@
-// Button.stories.ts|tsx
-
 import type { Meta, StoryObj } from '@storybook/react';
 
 import { TextField } from './TextField';
 
 const meta: Meta<typeof TextField> = {
-  title: 'Design System/Text Fields/Base TextField',
+  title: 'Design System/Base TextField',
   component: TextField,
 };
 
